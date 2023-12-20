@@ -1,23 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import CountriesCapital from './components/CountryCapitalGame';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Job interview React 18 in TypeScript
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          Click on pairs to finish the game
+        </p>
+        <CountriesCapital data={{ France: 'Paris', Italy: 'Rome', Spain: 'Madrid'}} />
       </header>
     </div>
   );
